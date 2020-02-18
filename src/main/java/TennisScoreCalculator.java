@@ -28,7 +28,6 @@ public class TennisScoreCalculator {
         if((player1Points > player2Points) && (player2Points > 2)){
             return "advantagePlayer1";
         }
-
         if((player2Points > player1Points) && (player1Points > 2)){
             return "advantagePlayer2";
         }

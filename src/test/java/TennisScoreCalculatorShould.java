@@ -76,4 +76,9 @@ public class TennisScoreCalculatorShould {
     public void loveFortyWhen0and4Scored() {
         assertEquals("love:forty", calculator.score(0,4));
     }
+
+    @Test
+    public void fortyLoveWhen4and0Scored() {
+        assertEquals("forty:love", calculator.score(4, 0));
+    }
 }
