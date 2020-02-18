@@ -63,22 +63,22 @@ public class TennisScoreCalculatorShould {
     }
 
     @Test
-    public void fortyFifteenWhen4and1Scored() {
-        assertEquals("forty:fifteen", calculator.score(4, 1));
+    public void fortyFifteenWhen3and1Scored() {
+        assertEquals("forty:fifteen", calculator.score(3, 1));
     }
 
     @Test
-    public void fifteenFortyWhen1and4Scored() {
-        assertEquals("fifteen:forty", calculator.score(1, 4));
+    public void fifteenFortyWhen1and3Scored() {
+        assertEquals("fifteen:forty", calculator.score(1, 3));
     }
 
     @Test
-    public void loveFortyWhen0and4Scored() {
-        assertEquals("love:forty", calculator.score(0,4));
+    public void loveFortyWhen0and3Scored() {
+        assertEquals("love:forty", calculator.score(0,3));
     }
 
     @Test
-    public void fortyLoveWhen4and0Scored() {
-        assertEquals("forty:love", calculator.score(4, 0));
+    public void fortyLoveWhen3and0Scored() {
+        assertEquals("forty:love", calculator.score(3, 0));
     }
 }
